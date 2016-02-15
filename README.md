@@ -4,6 +4,8 @@ Dragon Racer (ionic)
 # dragonracer
 An Ionic Framework and Cordova project featuring pixie (2d animation library), gsap (tween), and angular audio.
 
+(for the Angular2/Ionic2 version visit https://github.com/shaunnez/dragonracer2) 
+
 This ionic project also utilises SASS as it's CSS framework. 
 
 The game is simple, choose how many dragons you want, change the "odds" of each dragon winning (i.e. a real horse race) and bet on the dragon. Utilising a random generator, simulate a real betting and racing enviroment.
