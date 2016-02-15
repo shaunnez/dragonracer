@@ -16,11 +16,11 @@ You will need to include ionic-cli on your computer, then git clone the repo and
 
 Even better, download the ionic app and simulate it running on your phone!
 
-![loading](screenshots/dragonracer2-a.png "Loading")
-![home](screenshots/dragonracer2-b.png "Home")
-![dragon bet](screenshots/dragonracer2-c.png "Choose dragon to bet on")
-![bet amount](screenshots/dragonracer2-d.png "Place bet amount")
-![watch race](screenshots/dragonracer2-e.png "Watch race")
-![game over](screenshots/dragonracer2-f.png "Game over score")
-![stats](screenshots/dragonracer2-g.png "Stats")
-![options](screenshots/dragonracer2-h.png "Options")
+![loading](screenshots/dragonracer-a.png "Loading")
+![home](screenshots/dragonracer-b.png "Home")
+![dragon bet](screenshots/dragonracer-c.png "Choose dragon to bet on")
+![bet amount](screenshots/dragonracer-d.png "Place bet amount")
+![watch race](screenshots/dragonracer-e.png "Watch race")
+![game over](screenshots/dragonracer-f.png "Game over score")
+![stats](screenshots/dragonracer-g.png "Stats")
+![options](screenshots/dragonracer-h.png "Options")
