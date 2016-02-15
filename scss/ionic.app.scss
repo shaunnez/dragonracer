@@ -1,0 +1,198 @@
+/*
+To customize the look and feel of Ionic, you can override the variables
+in ionic's _variables.scss file.
+
+For example, you might change some of the default colors:
+
+$light:                           #fff !default;
+$stable:                          #f8f8f8 !default;
+$positive:                        #387ef5 !default;
+$calm:                            #11c1f3 !default;
+$balanced:                        #33cd5f !default;
+$energized:                       #ffc900 !default;
+$assertive:                       #ef473a !default;
+$royal:                           #886aea !default;
+$dark:                            #444 !default;
+*/
+
+// The path for our ionicons font files, relative to the built CSS in www/css
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+
+// Include all of Ionic
+@import "www/lib/ionic/scss/ionic";
+
+html, body {
+	height: 100%;
+	position: relative;
+}
+
+#progress-container {
+	text-align: center;
+	background-image: url('../img/dragon-bg.jpg');
+	background-position: 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	-webkit-transition: opacity .5s ease-in-out;
+	-moz-transition: opacity .5s  ease-in-out;
+	-o-transition: opacity .5s  ease-in-out;
+	-ms-transition: opacity .5s  ease-in-out;
+	transition: opacity .5s  ease-in-out;
+	opacity: 0 !important;
+	position: relative;
+	
+	&.opacity-on {
+		opacity: 1 !important;
+	}
+	
+	h1 {
+		font-family: 'Montserrat';
+		color: #EEE;
+		position: absolute;
+		top: 10%;
+		left: 0;
+		right: 0;
+		text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+	}
+	
+	#progress {
+		position: absolute;
+		bottom: 5%;
+		width: 50%;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+	}
+}
+
+.home-button-container {
+	position: absolute;
+	bottom: 5%;
+	display: none;
+	width: 80%;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+}
+
+.dragon-avatar-list {
+	max-height: 50px;
+	margin-right: 25px;
+	+ .input-label {
+		width: 45%;
+		padding-right: 0px;
+		input {
+			padding-right: 0px;
+		}
+	}
+}
+
+.score-badge {
+	margin-top: 8px;
+}
+
+/* winner popup */
+/* General styles for the modal */
+
+.md-modal {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 50%;
+	max-width: 630px;
+	min-width: 320px;
+	height: auto;
+	z-index: 2000;
+	visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.md-overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	visibility: hidden;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	opacity: 0;
+	background: #2290cd;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	
+	img {
+		max-width: 100%;
+	}
+}
+
+
+/* Content styles */
+.md-content {
+	color: #fff;
+	position: relative;
+	border-radius: 3px;
+	margin: 0 auto;
+	padding: 15px;
+	text-align: center;
+	
+	h4 {
+		text-align: center;
+		background: transparent;
+		font-size: 2.0em;
+		font-weight: 300;
+		opacity: 0.8;
+		color: #fff;
+	}
+	
+	.winner-container{
+		text-align: left;
+		opacity: 0.8;
+		background: rgba(0,0,0,0.1);
+		border-radius: 3px 3px 0 0;
+		color: #fff;
+		margin: 15px 0px;
+		padding: 15px;
+	}
+	
+	img {
+		max-width: 100%;
+		max-height: 150px;
+		margin-top: 15px;
+	}
+}
+
+.md-content {
+	-webkit-transform: scale(0) rotate(720deg);
+	-moz-transform: scale(0) rotate(720deg);
+	-ms-transform: scale(0) rotate(720deg);
+	transform: scale(0) rotate(720deg);
+	opacity: 0;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.md-show {
+	.md-overlay {
+		-webkit-transition: all 0.5s;
+		-moz-transition: all 0.5s;
+		transition: all 0.5s;
+		visibility: visible !important;
+		opacity: 1;
+	}
+	
+	.md-content {
+		-webkit-transform: scale(1) rotate(0deg);
+		-moz-transform: scale(1) rotate(0deg);
+		-ms-transform: scale(1) rotate(0deg);
+		transform: scale(1) rotate(0deg);
+		opacity: 1;
+		visibility: visible !important
+	}
+}

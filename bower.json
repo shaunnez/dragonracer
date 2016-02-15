@@ -1,0 +1,16 @@
+{
+  "name": "DragonRacer",
+  "private": "true",
+  "devDependencies": {
+    "ionic": "driftyco/ionic-bower#1.1.1"
+  },
+  "dependencies": {
+    "pixi.js": "pixi#~3.0.8",
+    "pixi-spine": "https://github.com/pixijs/pixi-spine.git#~1.0.6",
+    "gsap": "~1.18.1",
+    "jquery": "~2.1.4",
+    "lodash": "~3.10.1",
+    "angular-audio": "~1.7.1",
+    "ElasticProgress": "https://github.com/codrops/ElasticProgress.git"
+  }
+}

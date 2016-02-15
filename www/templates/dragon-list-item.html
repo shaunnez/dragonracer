@@ -1,0 +1,10 @@
+<img ng-src="img/dragon-{{ $index + 1}}.png" />
+<h2>{{dragon.name}}</h2>
+<p>Odds: {{ (dragon.weight / totalWeight * 100).toFixed(2) }}%</p>
+<p ng-if="dragon.positions.length === 0">No games played yet</p>
+<p ng-if="dragon.positions.length > 0">Positions: 
+	<label ng-repeat="position in dragon.positions track by $index">
+		{{ getOrdinal(position) }}<span ng-if="$index < dragon.positions.length - 1">, </span>
+	</label>
+</p>
+<span class="badge badge-positive score-badge" >{{dragon.score}}</span> 

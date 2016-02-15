@@ -1,0 +1,14 @@
+<ion-view view-title="Click to place bet">
+  <ion-content>
+		<ion-item class="text-center item-divider">
+			<h3>Points available: {{ config.playerScore }}</h3>
+		</ion-item>
+    <ion-list ng-repeat="dragon in config.dragons">
+			<ion-item class="item-avatar" 
+				ng-include="'templates/dragon-list-item.html'" 
+				ng-if="$index < config.amountOfDragons"
+				ng-click="placeBet(dragon.name, dragon.weight)"
+			></ion-item>
+		</ion-list>
+  </ion-content>
+</ion-view>

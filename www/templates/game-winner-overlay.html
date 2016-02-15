@@ -1,0 +1,27 @@
+<div class="md-overlay"></div>
+<div class="md-modal md-effect-3">
+	<div class="md-content">
+		<h4>Game over!<br/>
+			<span ng-if="bet.pointsMade > 0">You won {{ bet.pointsMade }} points<br/></span>
+			<span ng-if="bet.pointsMade < 0">You lost {{ bet.pointsMade }}<br/></span>
+			<span>(Score: {{playerScore}} points)</span>
+			<img src="img/badge.png" style="max-width: 100%" /><br/>
+
+			<span>The top {{ winningDragons.length }} positions are</span>
+		</h4>
+		
+		<div class='winner-container'>
+			<p ng-repeat="dragon in winningDragons">
+				<span ng-if='$index < 5'>
+				<strong>{{$index + 1}}</strong>: {{dragon}}
+				</span>
+			</p>
+		</div>
+		
+		
+		<div class="button-bar">
+			<button class="button button-positive" ng-click="resetGame()">New Game</button>
+			<button class="button button-dark" ng-click="viewStats()">View stats</button>
+		</div>
+	</div>
+</div>
